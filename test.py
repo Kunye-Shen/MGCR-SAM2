@@ -44,7 +44,6 @@ def test(net, args):
     dataloader_test = DataLoader(dataset_test, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
 
     for index, data in tqdm(enumerate(dataloader_test), total=dataloader_test.__len__()):
-    #for index, data in enumerate(dataloader_test):
         image, name = data['image'], data['name']
 
         image = image.type(torch.FloatTensor)
