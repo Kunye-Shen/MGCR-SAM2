@@ -12,4 +12,4 @@ torchvision 0.20.1
 ```
 https://github.com/Kunye-Shen/MGCR-SAM2.git
 ```
-1. We also provide the predicted saliency maps [baidu](https://pan.baidu.com/s/1veFxz783UXI_to5VPB3AnQ) extraction code: s6yg.).
+1. We also provide the predicted saliency maps ([GoogleDrive](https://drive.google.com/drive/folders/1VV-Y87g3tmIkYbN5bdZzmPCPmpAGkZ5U?usp=drive_link), or [baidu](https://pan.baidu.com/s/1veFxz783UXI_to5VPB3AnQ) extraction code: s6yg.).
