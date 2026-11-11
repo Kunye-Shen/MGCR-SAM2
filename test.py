@@ -40,7 +40,7 @@ def test(net, args):
     net.eval()
     # load testing data
     print(f"Dataset: {args.dataset}")
-    dataset_test = DefectDataset(args.dataset_path, transform_test, 'test')
+    dataset_test = DefectDataset(args.dataset_path, transform_test)
     dataloader_test = DataLoader(dataset_test, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
 
     for index, data in tqdm(enumerate(dataloader_test), total=dataloader_test.__len__()):

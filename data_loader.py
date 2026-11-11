@@ -64,12 +64,8 @@ def normPRED(x):
 
 class DefectDataset(Dataset):
     def __init__(self, data_path, transform, mode='train'):
-        if mode == 'train':
-            self.image_list = glob(data_path + f"{mode}/Img/*")
-            self.label_list = glob(data_path + f"{mode}/GT/*")
-        else:
-            self.image_list = glob(data_path + f"{mode}/Img/*")
-            self.label_list = glob(data_path + f"{mode}/GT/*")
+        self.image_list = glob(data_path + f"{mode}/Img/*")
+        self.label_list = glob(data_path + f"{mode}/GT/*")
         self.image_list.sort()
         self.label_list.sort()
         self.transform = transform
